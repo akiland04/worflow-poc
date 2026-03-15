@@ -1,4 +1,4 @@
-FROM node
+FROM node:20-alpine
 
 WORKDIR /app
 
@@ -8,4 +8,4 @@ RUN npm ci
 
 EXPOSE 3000
 
-CMD [ "node", "main.js" ]
+CMD [ "node", "dist/main" ]
